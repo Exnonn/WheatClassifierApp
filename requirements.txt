@@ -3,3 +3,4 @@ pycaret
 pandas
 scikit-learn
 mlflow
+pycaret==3.3.2
