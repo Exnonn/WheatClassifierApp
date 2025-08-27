@@ -1,9 +1,0 @@
-numpy==1.26.4
-cython==0.29.36
-setuptools<70
-wheel
-pandas
-scikit-learn
-streamlit
-mlflow
-pycaret==3.3.2
