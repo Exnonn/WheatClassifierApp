@@ -8,9 +8,14 @@ model = load_model(r'wheat_classifier')
 # App title
 st.title("Wheat Type Classification")
 
+length = st.number_input("Length", min_value=0.0)
+width = st.number_input("Width", min_value=0.0)
+
+# Calculate area and perimeter
+area = length * width
+perimeter = 2 * (length + width)
+
 # Input fields for features used in training
-area = st.number_input("Area", min_value=0.0)
-perimeter = st.number_input("Perimeter", min_value=0.0)
 compactness = st.number_input("Compactness", min_value=0.0)
 asymmetry_coeff = st.number_input("Asymmetry Coefficient", min_value=0.0)
 groove = st.number_input("Groove", min_value=0.0)
