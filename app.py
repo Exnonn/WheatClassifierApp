@@ -33,8 +33,5 @@ if st.button("Predict"):
     st.write(prediction)
 
     # Get predicted class (label)
-    predicted_class = prediction.loc[0, 'Label']
-
-    # Show prediction in desired format
-    st.success(f"Predicted Wheat Type: {predicted_class}")
+    st.write(prediction.columns)
 
