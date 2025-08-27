@@ -2,9 +2,8 @@ numpy==1.26.4
 cython==0.29.36
 setuptools<70
 wheel
-streamlit
-pycaret==3.3.2
 pandas
 scikit-learn
+streamlit
 mlflow
-pmdarima==2.0.4
+pycaret==3.3.2
