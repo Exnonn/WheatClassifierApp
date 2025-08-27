@@ -1,3 +1,4 @@
+python==3.11.9
 streamlit==1.26.0
 pandas==2.1.1
 numpy==1.26.0
@@ -11,3 +12,4 @@ xgboost==1.7.7
 plotly==5.18.0
 altair==5.5.0
 pillow==10.1.0 
+
