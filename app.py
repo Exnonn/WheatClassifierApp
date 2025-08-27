@@ -29,11 +29,12 @@ if st.button("Predict"):
     # Make prediction
     prediction = predict_model(model, data=input_data)
 
-    # Debug: show the whole prediction dataframe
+    # Debug: show the whole prediction dataframe (optional)
     st.write(prediction)
 
-    # Safely get predicted class (last column is usually the predicted label)
-    predicted_class = prediction.iloc[0, -1]
+    # Get predicted class (label)
+    predicted_class = prediction.loc[0, 'Label']
 
-    # Show prediction
+    # Show prediction in desired format
     st.success(f"Predicted Wheat Type: {predicted_class}")
+
