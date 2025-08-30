@@ -42,7 +42,7 @@ else:
 
 # Predict button
 if st.button("Predict Wheat Type"):
-    input_df = pd.DataFrame([{
+    input_data = pd.DataFrame([{
         "Area": area,
         "Perimeter": perimeter,
         "Compactness": compactness,
