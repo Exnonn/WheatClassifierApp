@@ -32,6 +32,13 @@ else:
     st.write(f"📐 Calculated Area: **{area:.2f}**")
     st.write(f"📏 Calculated Perimeter: **{perimeter:.2f}**")
 
+    # Disclaimer about calculation accuracy
+    st.warning(
+        "⚠️ Disclaimer: The area of a wheat seed depends on its shape. "
+        "This calculator uses a simple Length × Width formula, which may not be accurate "
+        "for irregular or curved seed shapes. Use the results as an approximation only."
+    )
+
     compactness = st.number_input("Compactness", min_value=0.0)
     asymmetry = st.number_input("Asymmetry Coefficient", min_value=0.0)
     groove = st.number_input("Groove Length", min_value=0.0)
