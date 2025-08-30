@@ -3,7 +3,7 @@ import pandas as pd
 from pycaret.classification import load_model, predict_model
 
 # Load the trained model
-model = load_model("models/wheat_classifier")  # adjust path if needed
+model = load_model(r"wheat_classifier")  # adjust path if needed
 
 st.title("🌾 Wheat Type Classification App")
 
