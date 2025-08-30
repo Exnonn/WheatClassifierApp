@@ -49,8 +49,8 @@ if st.button("Predict Wheat Type"):
         "AsymmetryCoeff": asymmetry,
         "Groove": groove
     }])
-
-    prediction = predict_model(model, data=input_df)
+    
+    st.write("Prediction output:", prediction.head())
     predicted_class = prediction.loc[0, "Label"]
     predicted_score = prediction.loc[0, "Score"]
 
